@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jar of fliess</title>
+    <style>
+    header{
+        background-color: #EDEF5F;
+        color: #682805;
+        text-align: center;
+        max-width: 800px;
+        margin:0 auto;
+        padding: 16px;
+        border: 5px solid #F5912F ;
+    }
+    img{
+    width: 300px;
+    height: 200px;  
+    padding-right: 10px;
+    }
+    main{
+        background-color: #ffff;
+        color: black;
+        max-width: 800px;
+        margin: 0 auto;
+        
+    }
+    article{
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>jar of fliess</h1>
+    <p>esse site será sobre bandas de rock no geral, mas irei falar frequentemente sobre a banda alice in chains</p>
+    </header>
+
+    <main>
+    <article>
+    <img src="imagem blog.avif" alt="Close do cantor Layne Staley em uma apresentação ao vivo. Ele tem cabelo curto rosa, usa óculos escuros de armação preta e está posicionado em frente a um microfone. O cenário possui iluminação em tons de azul com luzes quentes e desfocadas no fundo.">
+        <div>
+        <h2>meu primeiro post</h2>
+        <P><i>por: rebeca marques</i></P>
+        <P>Sejam bem vindos ao meu blog,vou compartilhar conhecimentos, curiosidades e etc sobre minhas bandas de rock preferidas.</P>
+        <button>❤️<span>0</span></button>
+        <button>🔗​<span>0</span></button>
+        <button>👏​<span>0</span></button>
+        </div>
+     </article>
+        
+      <article>
+         <img src="imagem post 2.jpg" alt="foto do album dirt da banda alice in chains">
+        <div>
+        <h2>meu segundo post</h2>
+        <P><i>por: rebeca marques</i></P>
+        <P>Gostaria de dizer que o album dirt do alice in chains é um dos melhores em minha opiniao, gosto de toda a profundidade das letras compostas, principalmente porque o layne nao estava passando por uma das melhores fases e mesmo assim conseguiu compor de maneira excepcional!</P>
+        <button>❤️<span>0</span></button>
+        <button>🔗​<span>0</span></button>
+        <button>👏​<span>0</span></button>
+        </div>
+        
+      </article>  
+
+    </main>
+</body>
+<script>
+const botoes = document.querySelectorAll("button");
+botoes.forEach (function (botao) {
+  let curtiu = false;  
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+if (curtiu === false){
+texto.textContent++;
+curtiu = true;
+} else{
+    texto.textContent --;
+    curtiu = false;
+}
+
+  }
+  }) 
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

@@ -22,11 +22,13 @@ header{
         background-color: #ffff;
         color: black;
         margin: 0 auto;
-        display: flex;
+        
         padding: 16px;
+       display: flex;
    
         
     }
        article{
         display: flex;
+        border: #EDEF5F 1px;
     }

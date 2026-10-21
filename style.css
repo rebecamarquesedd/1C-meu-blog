@@ -21,8 +21,8 @@ header{
  main{
         background-color: #ffff;
         color: black;
-      display: flex;
         margin: 0 auto;
+        display: flex;
    
         
     }

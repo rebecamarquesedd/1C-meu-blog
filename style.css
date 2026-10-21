@@ -25,10 +25,14 @@ header{
         
         padding: 16px;
        display: flex;
+       flex-wrap: wrap;
    
         
     }
        article{
         display: flex;
-        border: #EDEF5F 1px;
+        border: 1px #EDEF5F solid;
+        margin: 16px;
+        gap: 16px;
+        padding: 16px;
     }
